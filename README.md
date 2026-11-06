@@ -108,6 +108,7 @@ de e-mail** para enviar confirmações e avisos.
                           confirmação após a      
                           aprovação de uma        
                           reserva e do pagamento. 
+                          
   -----------------------------------------------------------------------
 
 ## 3. Requisitos não funcionais (RNF)
@@ -212,14 +213,14 @@ utilizada.
   -----------------------------------------------------------------------
   Código                  Regra de negócio        Prioridade
   ----------------------- ----------------------- -----------------------
-  RN01                    Cada reserva            Alta
+  RN01                    Cada reserva  Alta
                           corresponde a uma única 
                           quadra, uma data e uma  
                           faixa de horário        
                           definida pelo           
                           estabelecimento.        
 
-  RN02                    Uma quadra não pode     Alta
+  RN02                    Uma quadra não pode Alta
                           possuir duas reservas   
                           confirmadas que ocupem  
                           a mesma faixa de        
@@ -250,12 +251,13 @@ utilizada.
                           e configurar horários   
                           de funcionamento.       
 
-  RN07                    O horário de            Média
+  RN07                    O horário de Média
                           funcionamento e a       
                           duração dos períodos de 
                           reserva serão definidos 
                           pelo administrador do   
-                          estabelecimento.        
+                          estabelecimento.     
+                          
   -----------------------------------------------------------------------
 
 ------------------------------------------------------------------------
