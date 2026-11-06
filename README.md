@@ -103,7 +103,7 @@ de e-mail** para enviar confirmações e avisos.
                           consulte e gerencie as  
                           reservas realizadas.    
 
-  RF12                    O sistema deve enviar   Média
+  RF12                    O sistema deve enviar     Média
                           ao cliente um e-mail de 
                           confirmação após a      
                           aprovação de uma        
@@ -202,6 +202,7 @@ projeto.
                                       solicitações       
                                       ocorrerem          
                                       simultaneamente.   
+                                      
   ------------------------------------------------------------------------
 
 ## 4. Regras de negócio (RN)
