@@ -1,14 +1,15 @@
-# CourtBook --- Sistema de Reserva de Quadras Esportivas
+# Minha Quadra --- Sistema de Reserva de Quadras Esportivas
 
 **Disciplina:** Projetos de Sistemas\
 **Instituição:** Centro Universitário de Ensino Superior do Amazonas ---
 CIESA\
-**Trabalho em equipe:** Requisitos e Arquitetura de um Sistema\
+**Trabalho individual:** Requisitos e Arquitetura de um Sistema\
+**Aluno*: Icaro César Gois Ribeiro\
 **Tema:** Sistema fictício de reserva de quadras esportivas\
 **Versão:** 1.0
 
 > **Escopo acadêmico:** este documento apresenta o levantamento de
-> requisitos e a proposta conceitual de arquitetura do CourtBook.
+> requisitos e a proposta conceitual de arquitetura do Minha Quadra.
 > Conforme a orientação da atividade, não faz parte do escopo
 > implementar ou programar o sistema.
 
@@ -18,7 +19,7 @@ CIESA\
 
 ## 1. Descrição do sistema
 
-O CourtBook é um sistema web destinado a facilitar a reserva de quadras
+O Minha Quadra é um sistema web destinado a facilitar a reserva de quadras
 esportivas em estabelecimentos que oferecem espaços para práticas como
 futsal, basquete e vôlei. Atualmente, a consulta de horários e a
 confirmação de reservas podem depender de contatos por telefone ou
@@ -30,7 +31,7 @@ Os principais usuários são **clientes**, que criam uma conta, consultam
 quadras e horários, realizam reservas, acompanham pagamentos e cancelam
 agendamentos conforme as regras; e **administradores**, responsáveis por
 cadastrar quadras, configurar preços e horários, acompanhar reservas e
-manter os dados do estabelecimento. O CourtBook também se comunica com
+manter os dados do estabelecimento. O Minha Quadra também se comunica com
 um **gateway de pagamento** para processar pagamentos e com um **serviço
 de e-mail** para enviar confirmações e avisos.
 
@@ -263,7 +264,7 @@ utilizada.
 
 ## 5. Visão arquitetural
 
-O CourtBook utilizará uma arquitetura cliente-servidor. O cliente
+O Minha Quadra utilizará uma arquitetura cliente-servidor. O cliente
 acessará uma aplicação web responsiva pelo navegador. A aplicação
 enviará requisições HTTPS para uma API REST, responsável pelas regras de
 negócio e pela comunicação com o banco de dados PostgreSQL e com
@@ -289,7 +290,7 @@ e a aplicação dos requisitos de segurança e integridade.
 
 ### 6.1. Nível 1 --- Diagrama de contexto
 
-O diagrama apresenta o CourtBook como uma única unidade, seus usuários e
+O diagrama apresenta o Minha Quadra como uma única unidade, seus usuários e
 os sistemas externos com os quais se comunica. Neste nível, não são
 apresentados banco de dados nem módulos internos.
 
@@ -297,7 +298,7 @@ apresentados banco de dados nem módulos internos.
 flowchart LR
     Cliente["Cliente<br/>Consulta quadras e realiza reservas"]
     Admin["Administrador<br/>Gerencia quadras, preços e reservas"]
-    Sistema["CourtBook<br/>Sistema web de reserva de quadras"]
+    Sistema["Minha Quadra<br/>Sistema web de reserva de quadras"]
     Pagamento["Gateway de pagamento<br/>Processa pagamentos"]
     Email["Serviço de e-mail<br/>Envia confirmações e avisos"]
 
@@ -310,14 +311,14 @@ flowchart LR
 ```
 
 **Legenda:** - Retângulo azul/identificado como usuário: pessoa que
-utiliza o sistema. - CourtBook: sistema que está sendo projetado. -
+utiliza o sistema. - Minha Quadra: sistema que está sendo projetado. -
 Gateway de pagamento e serviço de e-mail: sistemas externos. - Setas:
 comunicação entre os participantes; o texto informa o conteúdo e o
 protocolo.
 
 ### 6.2. Nível 2 --- Diagrama de contêineres
 
-O diagrama mostra as partes executáveis ou armazenadoras do CourtBook.
+O diagrama mostra as partes executáveis ou armazenadoras do Minha Quadra.
 Cada contêiner apresenta sua tecnologia e o protocolo de comunicação.
 
 ``` mermaid
@@ -417,7 +418,7 @@ consequências positivas e negativas.
 **Requisitos relacionados:** RF01, RF02, RF03, RF04, RF05, RNF06 e
 RNF07.
 
-**Contexto:** o CourtBook precisa ser acessível para clientes e
+**Contexto:** o Minha Quadra precisa ser acessível para clientes e
 administradores em diferentes dispositivos, sem exigir instalação de um
 aplicativo.
 
@@ -690,7 +691,7 @@ cancelamento nessa situação.
 
 ### 8.3. HTTPS e proteção dos dados
 
-O CourtBook deverá utilizar HTTPS em toda comunicação entre navegador,
+O Minha Quadra deverá utilizar HTTPS em toda comunicação entre navegador,
 API e serviços externos. HTTPS utiliza o protocolo TLS para proteger a
 comunicação em trânsito.
 
@@ -811,7 +812,7 @@ requisições HTTP possuem um requisito funcional correspondente.
 
 # 10. Conclusão
 
-O desenvolvimento conceitual do CourtBook permitiu identificar as
+O desenvolvimento conceitual do Minha Quadra permitiu identificar as
 necessidades dos clientes e administradores de um sistema de reserva de
 quadras esportivas. O levantamento classificou os requisitos funcionais,
 não funcionais e as regras de negócio, estabelecendo o que o sistema
@@ -826,25 +827,9 @@ rastreabilidade demonstraram como a arquitetura atende aos requisitos
 definidos.
 
 Conclui-se que a documentação apresenta uma proposta coerente para o
-CourtBook, mantendo a ligação entre as necessidades do negócio, os
+Minha Quadra, mantendo a ligação entre as necessidades do negócio, os
 requisitos e as decisões de arquitetura.
 
 ------------------------------------------------------------------------
 
-# 11. Checklist de entrega
 
--   [ ] Conferir os nomes dos integrantes e a identificação da equipe.
--   [ ] Revisar os requisitos e as prioridades.
--   [ ] Conferir se os três diagramas Mermaid renderizam corretamente no
-    GitHub.
--   [ ] Conferir os três ADRs e seus requisitos relacionados.
--   [ ] Conferir os quatro exemplos HTTP, seus status e seus JSONs.
--   [ ] Conferir a tabela de rastreabilidade.
--   [ ] Criar um repositório público no GitHub.
--   [ ] Salvar este conteúdo como `README.md` na raiz do repositório.
--   [ ] Cada integrante realizar pelo menos um commit em seu próprio
-    nome.
--   [ ] Enviar o link do repositório ao professor.
-
-**Importante:** os commits devem ser feitos pelos integrantes reais da
-equipe. Não se deve simular contribuições de outras pessoas.
