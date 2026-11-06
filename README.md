@@ -8,10 +8,6 @@ CIESA\
 **Tema:** Sistema fictício de reserva de quadras esportivas\
 **Versão:** 1.0
 
-> **Escopo acadêmico:** este documento apresenta o levantamento de
-> requisitos e a proposta conceitual de arquitetura do Minha Quadra.
-> Conforme a orientação da atividade, não faz parte do escopo
-> implementar ou programar o sistema.
 
 ------------------------------------------------------------------------
 
