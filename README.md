@@ -4,7 +4,7 @@
 **Instituição:** Centro Universitário de Ensino Superior do Amazonas ---
 CIESA\
 **Trabalho individual:** Requisitos e Arquitetura de um Sistema\
-**Aluno*: Icaro César Gois Ribeiro\
+**Aluno**: Icaro César Gois Ribeiro\
 **Tema:** Sistema fictício de reserva de quadras esportivas\
 **Versão:** 1.0
 
