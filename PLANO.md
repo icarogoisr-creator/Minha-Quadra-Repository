@@ -4,8 +4,8 @@
 **Instituição:** Centro Universitário de Ensino Superior do Amazonas — CIESA  
 **Projeto:** Minha Quadra — Sistema de Reserva de Quadras Esportivas  
 **Base:** arquitetura e requisitos definidos na Etapa 1  
-**Responsável pelo trabalho individual:** [PREENCHER NOME]  
-**Data:** [PREENCHER]
+**Responsável pelo trabalho individual:** Icaro César Gois Ribeiro  
+**Data:** 19/11/2026
 
 ---
 
@@ -337,14 +337,3 @@ A Etapa 2 transforma as decisões arquiteturais da Etapa 1 em um plano executáv
 
 O registro de riscos apresenta respostas e gatilhos, enquanto o plano de aquisições identifica dependências externas e a necessidade de antecipar a contratação do gateway. Por fim, a definição de papéis, capacitação e critérios de aceite prepara a transferência para a operação. Assim, o plano mantém rastreabilidade com os ADRs, componentes C4, requisitos funcionais, requisitos não funcionais e regras de negócio da Etapa 1.
 
----
-
-## 11. Checklist antes da entrega
-
-- [ ] Preencher nome do responsável pelo trabalho individual.
-- [ ] Confirmar nomes dos responsáveis ou manter os papéis, se a atividade aceitar essa forma.
-- [ ] Confirmar se o professor exige datas reais ou aceita cronograma estimado.
-- [ ] Revisar valores de custos e deixar claro que são premissas estimadas.
-- [ ] Conferir se os diagramas Mermaid renderizam no GitHub.
-- [ ] Salvar este arquivo como `PLANO.md` na raiz do mesmo repositório GitHub da Etapa 1.
-- [ ] Enviar o link do arquivo/repositório ao professor até a data indicada na atividade.
