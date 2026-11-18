@@ -1,8 +1,8 @@
-# CourtBook — Etapa 2: Plano de Projeto
+# Minha Quadra — Etapa 2: Plano de Projeto
 
 **Disciplina:** Projetos de Sistemas  
 **Instituição:** Centro Universitário de Ensino Superior do Amazonas — CIESA  
-**Projeto:** CourtBook — Sistema de Reserva de Quadras Esportivas  
+**Projeto:** Minha Quadra — Sistema de Reserva de Quadras Esportivas  
 **Base:** arquitetura e requisitos definidos na Etapa 1  
 **Responsável pelo trabalho individual:** [PREENCHER NOME]  
 **Data:** [PREENCHER]
@@ -11,7 +11,7 @@
 
 ## 1. Premissas do plano
 
-Esta etapa transforma a arquitetura definida na Etapa 1 em um plano de projeto. O CourtBook continua sendo uma aplicação web cliente-servidor, com React e TypeScript no front-end, Java com Spring Boot na API, PostgreSQL como banco de dados, gateway externo de pagamento e serviço externo de e-mail.
+Esta etapa transforma a arquitetura definida na Etapa 1 em um plano de projeto. O Minha Quadra continua sendo uma aplicação web cliente-servidor, com React e TypeScript no front-end, Java com Spring Boot na API, PostgreSQL como banco de dados, gateway externo de pagamento e serviço externo de e-mail.
 
 As estimativas abaixo são **premissas acadêmicas de planejamento**, não cotações comerciais. Elas deverão ser revistas quando houver informações reais sobre volume de usuários, preços de fornecedores, disponibilidade da equipe e escopo contratado.
 
@@ -40,7 +40,7 @@ A EAP está organizada em três níveis ou mais. Os pacotes de transição tamb�
 
 ```mermaid
 flowchart TD
-    P["0. CourtBook — Projeto"]
+    P["0. Minha Quadra — Projeto"]
     P --> A["1. Gestão e planejamento"]
     P --> B["2. Construção da solução"]
     P --> C["3. Verificação e implantação"]
@@ -146,7 +146,7 @@ O marco imóvel do plano é a **data de entrada em operação acordada com o est
 
 ```mermaid
 gantt
-    title Cronograma estimado do CourtBook
+    title Cronograma estimado do Minha Quadra
     dateFormat YYYY-MM-DD
     axisFormat %d/%m
 
@@ -195,7 +195,7 @@ As alternativas comparam duas formas de hospedar e operar a solução. Os valore
 - Alternativa A: R$ 38.000 + (R$ 18.000 × 3) = **R$ 92.000**.
 - Alternativa B: R$ 16.000 + (R$ 27.000 × 3) = **R$ 97.000**.
 
-A alternativa A apresenta custo estimado total R$ 5.000 menor no período, mas exige investimento inicial maior e capacidade própria. A alternativa B reduz a implantação e facilita ajustar recursos conforme a demanda, mas possui custo operacional anual maior. Para o CourtBook, a **Alternativa B é recomendada** caso o estabelecimento não tenha equipe especializada para manter infraestrutura própria e valorize elasticidade e serviços gerenciados. A escolha deverá ser confirmada com cotações e projeção real de acessos.
+A alternativa A apresenta custo estimado total R$ 5.000 menor no período, mas exige investimento inicial maior e capacidade própria. A alternativa B reduz a implantação e facilita ajustar recursos conforme a demanda, mas possui custo operacional anual maior. Para o Minha Quadra, a **Alternativa B é recomendada** caso o estabelecimento não tenha equipe especializada para manter infraestrutura própria e valorize elasticidade e serviços gerenciados. A escolha deverá ser confirmada com cotações e projeção real de acessos.
 
 ### 4.1 Premissas de custo
 
@@ -263,7 +263,7 @@ A decisão considera custo total, prazo, risco, dependência de fornecedor e cap
 
 | Item | Decisão | Justificativa | Prazo estimado / dependência |
 |---|---|---|---|
-| Aplicação web React | Construir | É parte central do produto e contém a experiência específica do CourtBook. | Desenvolvimento interno, conforme cronograma. |
+| Aplicação web React | Construir | É parte central do produto e contém a experiência específica do Minha Quadra. | Desenvolvimento interno, conforme cronograma. |
 | API Java + Spring Boot | Construir | Implementa regras de negócio próprias, autenticação e fluxo de reserva. | Desenvolvimento interno, conforme cronograma. |
 | Banco PostgreSQL | Comprar/usar serviço gerenciado ou instalar solução existente | PostgreSQL é tecnologia escolhida na ADR-002; não faz sentido desenvolver um banco próprio. | Configuração inicial; depende de infraestrutura. |
 | Gateway de pagamento | Comprar/contratar serviço externo | Processamento financeiro exige integração especializada e não deve ser implementado do zero. | Planejar até 90 dias para contratação, credenciamento e homologação, conforme premissa do enunciado. |
@@ -309,13 +309,13 @@ Se a equipe não tiver experiência com operação de PostgreSQL, segurança de 
 
 A Lei de Brooks alerta que acrescentar pessoas a um projeto atrasado pode aumentar o atraso devido ao tempo de integração e comunicação. Portanto, a resposta principal a atrasos será priorizar escopo, remover bloqueios e reduzir retrabalho; novas pessoas só serão adicionadas quando houver tarefas independentes e tempo para integração.
 
-A Lei de Conway indica que a arquitetura tende a refletir a estrutura de comunicação da organização. Como o CourtBook possui componentes separados — interface, API, dados e integrações — as responsabilidades devem ser claras, mas as equipes precisam manter comunicação frequente para evitar que contratos entre componentes fiquem incompatíveis.
+A Lei de Conway indica que a arquitetura tende a refletir a estrutura de comunicação da organização. Como o Minha Quadra possui componentes separados — interface, API, dados e integrações — as responsabilidades devem ser claras, mas as equipes precisam manter comunicação frequente para evitar que contratos entre componentes fiquem incompatíveis.
 
 ---
 
 ## 9. Critérios de aceite e encerramento
 
-O CourtBook poderá ser considerado pronto para entrada em operação quando:
+O Minha Quadra poderá ser considerado pronto para entrada em operação quando:
 
 - Cadastro e login funcionarem conforme RF01 e RF02, com controle de acesso por perfil.
 - Clientes consultarem quadras e horários conforme RF03 e RF04.
@@ -333,7 +333,7 @@ O CourtBook poderá ser considerado pronto para entrada em operação quando:
 
 ## 10. Conclusão
 
-A Etapa 2 transforma as decisões arquiteturais da Etapa 1 em um plano executável para o CourtBook. A EAP decompõe o trabalho em pacotes de construção, verificação e transição; o cronograma identifica dependências e o caminho crítico; a análise de custos compara infraestrutura própria e nuvem ao longo de três anos; e a estimativa PERT torna explícita a incerteza das durações.
+A Etapa 2 transforma as decisões arquiteturais da Etapa 1 em um plano executável para o Minha Quadra. A EAP decompõe o trabalho em pacotes de construção, verificação e transição; o cronograma identifica dependências e o caminho crítico; a análise de custos compara infraestrutura própria e nuvem ao longo de três anos; e a estimativa PERT torna explícita a incerteza das durações.
 
 O registro de riscos apresenta respostas e gatilhos, enquanto o plano de aquisições identifica dependências externas e a necessidade de antecipar a contratação do gateway. Por fim, a definição de papéis, capacitação e critérios de aceite prepara a transferência para a operação. Assim, o plano mantém rastreabilidade com os ADRs, componentes C4, requisitos funcionais, requisitos não funcionais e regras de negócio da Etapa 1.
 
