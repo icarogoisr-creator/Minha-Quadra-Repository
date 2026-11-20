@@ -4,7 +4,7 @@
 **Instituição:** Centro Universitário de Ensino Superior do Amazonas — CIESA  
 **Projeto:** Minha Quadra — Sistema de Reserva de Quadras Esportivas  
 **Base:** arquitetura e requisitos definidos na Etapa 1  
-**Responsável pelo trabalho individual:** Icaro César Gois Ribeiro  
+**Aluno**: Icaro César Gois Ribeiro\
 **Data:** 19/11/2026
 
 ---
